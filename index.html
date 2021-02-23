@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<div class="wrap">
+    <h1>Glassmorphism</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil assumenda facere consequatur inventore, ut magni? Officiis necessitatibus commodi expedita perspiciatis illum suscipit excepturi? Tempore, deserunt quae. Tempora impedit itaque nulla quidem libero aliquam atque. Sequi, repudiandae voluptate! Vero dicta excepturi iste ipsam porro error alias odit voluptatibus, molestiae, magni illo voluptates eveniet expedita dolore! Rem nobis obcaecati vel eos quaerat expedita alias tempore nisi ut debitis labore reprehenderit enim delectus laborum ipsam, qui dolore dignissimos! Illo cum voluptatum cupiditate animi rem atque porro tempora, neque laboriosam tenetur maxime recusandae sint, voluptate dolore perspiciatis velit. Totam laborum nisi eligendi dolorum eveniet!</p>
+    
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content drop drop1">
+      <h4>Payment Checkout</h4>
+    <span class="close">&times;</span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Trip</th>
+                <th>Price</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pokhara</td>
+                <td>1,00,000</td>
+                <td>
+                    <div class="label label-success">CONFIRMED</div>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+  <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      // When the user click the button, open modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user click on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
